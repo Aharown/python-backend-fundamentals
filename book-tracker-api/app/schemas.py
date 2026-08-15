@@ -6,5 +6,10 @@ class BookResponse(BaseModel):
     author: str
     read: bool
 
+class BookCreate(BaseModel):
+    title: str
+    author: str
+    read: bool = False
+
     class Config:
         from_attributes = True
